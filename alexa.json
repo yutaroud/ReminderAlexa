@@ -1,0 +1,57 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "リマインダーくん",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "やめて"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RemindIntent",
+                    "slots": [
+                        {
+                            "name": "num",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{num} ",
+                        "{num} 人で",
+                        "{num} 人です",
+                        "{num} 人"
+                    ]
+                },
+                {
+                    "name": "UpdateIntent",
+                    "slots": [
+                        {
+                            "name": "minutes",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{minutes} 分遅い",
+                        "{minutes} 分進めて",
+                        "{minutes} 分遅らせて"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
